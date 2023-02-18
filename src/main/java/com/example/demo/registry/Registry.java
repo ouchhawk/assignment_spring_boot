@@ -1,7 +1,21 @@
-package com.example.demo.user;
+package com.example.demo.registry;
 
+import jakarta.persistence.*;
+
+@Entity
+@Table
 public class Registry {
 
+    @Id
+    @SequenceGenerator(
+            name = "registry_sequence",
+            sequenceName = "registry_sequence",
+            allocationSize = 1
+    )
+    @GeneratedValue(
+            strategy = GenerationType.SEQUENCE,
+            generator = "registry_sequence"
+    )
     private Long id;
     private String name;
     private String email;
