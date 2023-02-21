@@ -1,5 +1,7 @@
-package com.example.demo.registry;
+package com.example.demo.controller;
 
+import com.example.demo.model.Registry;
+import com.example.demo.service.RegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,7 +14,6 @@ import java.util.List;
 public class RegistryController {
 
     private final RegistryService registryService;
-
 
     @Autowired
     public RegistryController(RegistryService registryService) {

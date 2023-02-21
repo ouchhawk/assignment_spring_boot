@@ -1,5 +1,7 @@
-package com.example.demo.registry;
+package com.example.demo.service;
 
+import com.example.demo.model.Registry;
+import com.example.demo.repository.RegistryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.GetMapping;

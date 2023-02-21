@@ -1,4 +1,4 @@
-package com.example.demo.registry;
+package com.example.demo.model;
 
 import jakarta.persistence.*;
 
