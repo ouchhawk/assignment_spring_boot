@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.example.demo.controllers;
 
-import com.example.demo.model.Registry;
-import com.example.demo.service.RegistryService;
+import com.example.demo.models.dtos.RegistryDTO;
+import com.example.demo.services.RegistryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -21,8 +21,7 @@ public class RegistryController {
     }
 
     @GetMapping
-    public List<Registry> getRegistries(){
+    public List<RegistryDTO> getRegistries() {
         return registryService.getRegistries();
     }
-
 }

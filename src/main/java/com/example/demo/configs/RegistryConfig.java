@@ -1,7 +1,7 @@
-package com.example.demo.config;
+package com.example.demo.configs;
 
-import com.example.demo.model.Registry;
-import com.example.demo.repository.RegistryRepository;
+import com.example.demo.models.entities.Registry;
+import com.example.demo.repositories.RegistryRepository;
 import com.github.javafaker.Faker;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;

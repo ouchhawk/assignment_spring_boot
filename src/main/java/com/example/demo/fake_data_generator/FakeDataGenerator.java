@@ -1,6 +1,6 @@
 package com.example.demo.fake_data_generator;
 
-import com.example.demo.model.Registry;
+import com.example.demo.models.entities.Registry;
 import com.github.javafaker.Faker;
 import org.springframework.stereotype.Component;
 
